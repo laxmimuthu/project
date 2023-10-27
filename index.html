@@ -1,0 +1,170 @@
+<html>
+<head>
+    <title>My College</title>
+    <style>
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+    
+}
+header {
+    background-color: #333;
+    color: white;
+    padding: 20px;
+    position: relative;
+}
+.profile-picture {
+            width: 100px; 
+            height: 100px;
+            border-radius: 75%;
+            object-fit: cover;
+            position: absolute;
+            top: 75px;
+            left: 80px; 
+        }
+
+nav ul {
+    list-style: none;
+    padding: 20;
+}
+
+nav li {
+    display: inline;
+    margin-right: 90px;
+     margin-bottom: 100px; 
+        
+}
+
+nav a {
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+}
+
+
+.my{
+    font-size:large;
+    font-family:'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+.section-content {
+            background-color: #fff;
+            padding: 2rem;
+            margin: 1rem;
+            border-radius: 20px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);}
+.column {
+  float: left;
+  width: 33.33%;
+  padding: 5px;
+}
+.row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+    </style>
+</head>
+<body>
+    <script>
+        document.querySelectorAll('nav a').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const targetId = this.getAttribute('href').substring(1);
+                const targetSection = document.getElementById(targetId);
+                if (targetSection) {
+                    window.scrollTo({
+                        top: targetSection.offsetTop,
+                        behavior: 'smooth'
+                    });
+                }
+            });
+        });</script>
+    <header>
+        <img src="logo.jpg" alt="College Logo"class="profile-picture">
+        <h1 class="my"> <center>SAVANNAH COLLEGE OF ARTS AND SCIENCE</center></h1>
+        <b><p><center>Empowering Future Leaders</center></p></b>
+    </header>
+
+    <nav>
+        <ul><center>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#programs">Programs</a></li>
+            <li><a href="#faculty">Facilities</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </center>
+        </ul>
+    </nav>
+
+    <section id="home">
+        <div class="section-content">
+            <h4>Welcome to our college</h4>
+      <p class="my"><span>Savannah College of Arts and Science was established in the year 1965 by Sri. Si.Pa.Kumaran. It is located in the V.K.Puthor village of Surantai Taluk in Thenkasi District of TamilNadu. The founder, Sri.Si.Pa.Kumaran, a native of Kayamozhi Village, wanted to serve his place of birth.He formed a trust called  "Kumaran Educational Institution (K.E.I). As the first project, he established  college of Arts and Science with the sole aim of providing higher educational opportunities for the youth of this area. His son has been the Founder President of the college committee since its inception.The Savannah college has been affiliated to Manonmaniam Sundaranar University, Tirunelveli, since 1990.</span></p>
+    </div>
+    </section>
+    <section id="Acadamic Programmes">
+        <div class="section-content">
+            <h2>Programmes</h2>
+            <p>Students are given academic opportunities for their lateral and vertical progress with different programmes. The benefits and opportunities available in choosing the programmes are specified as Programme Outcomes, Programme Specific Outcomes and Course Outcomes for various programmes offered by the institution.
+
+                The following are the programmes offered by the college.</p><br>
+                
+                <h3>Undergraduate Programmes</h3>
+            <ol type="1">
+                <li>B.A.Tamil</li>
+                <li>B.A.English</li>
+                <li>B.Sc.Mathematics</li>
+                <li>B.Sc.Computer Science</li>
+                <li>B.C.A</li>
+                <li>B.B.A</li>
+            </ol>
+               <h3>Post Graduate Programmes</h3>
+            <ol type="1">
+                <li>M.A.Tamil</li>
+                <li>M.A.English</li>
+                <li>M.Sc.Mathematics</li>
+                <li>M.Sc.Computer Science</li>
+                <li>M.C.A</li>
+                <li>M.B.A</li>
+            </ol>
+    </section>
+    <section id="faculty">
+        <div class="section-content">
+        <h2>Facilities</h2>
+        <p>Our institution Savannah College, has sufficient infrastructural facilities such as class rooms, laboratories, library, browsing Centre, sports complex and many other support facilities.</p>
+        <div class="row">
+            <div class="column">
+              <img src="college.jpg"width="500">
+              <br><p><em><b>HOSTAL</b></em></p>
+              <p><b>The hostel has excellent living rooms, a dining hall, and prayer. The accommodation maintains high standards of hygiene, round the clock security, and provides uninterrupted power and water supply as well.</b>
+            </div>
+            <div class="column">
+              <img src="bus.jpg" width="500">
+              <p><b><em>TRANSPORT</em></b></p>
+                 <p>The college runs 10 busses for the convenience of the students living in and around V.K.Puthor. Students are permitted use the service after paying the prescribed bus fees.</p>
+            </div>
+           
+          </div>
+        </section>
+    <section id="contact us">
+    <div class="section-content">
+        <h2>Contact us</h2>
+        <img src="home.png"width="30"> <b> SAVANNAH COLLEGE OF ARTS AND SCIENCE
+            V.K.Puthor-683 215
+            Tenkasi District</b>
+            <br><br><br>
+    <img src="phone.png"width="60"><pre><b>
+    0091-04639 224529
+
+    0091-04639 220579
+
+    0091-04639 229525
+
+    0091-04639 223533</b></pre>
+    </div>
+    </section>
+
+   
+</body>
+</html>
+
+
